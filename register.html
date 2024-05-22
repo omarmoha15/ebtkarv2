@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>ابتكار - مرحبا</title>
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+        
+          <form action="#" dir="rtl" class="sign-up-form">
+            <h2 class="title">آنشاء حساب </h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="اسم المستخدم" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-user-plus"></i>
+              <input type="email" placeholder="رقم الهويه" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="البريد الالكتروني " />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-phone"></i>
+              <input type="text" placeholder=" رقم الهاتف  " />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <select name="user-category" id="user-category">
+                <option disabled selected hidden>تصنيف المستخدم</option>
+                <option value="option1">موظف داخل الجهة</option>
+                <option value="option2">موظف حكومي</option>
+                <option value="option3">مواطن</option>
+                <option value="option4">مقيم</option>
+                <!-- Add more options as needed -->
+              </select>
+            </div>
+            
+            
+            <div class="input-field">
+              <i class="fas fa-transgender-alt"></i>
+              <select name="user-category" id="user-category">
+                <option disabled selected hidden> الجنس</option>
+                <option value="M">ذكر</option>
+                <option value="F"> انثى</option>
+                
+                <!-- Add more options as needed -->
+              </select>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="كلمه المرور" />
+            </div>
+            <input type="submit" class="btn" value="آنشاء" />
+            
+            
+          </form>
+          
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content" style="visibility: hidden;" >
+            <img src="img/amara.png"   class="image" alt=""  style="position: relative;top: -100px;"/>
+            <h3>جديد هنا ؟</h3>
+            <p>
+              هل لديك فكرة مبتكرة ترغب في تحقيقها؟ انضم إلينا اليوم وقدّم فكرتك الرائعة لتلهم العالم. سجل الآن وكن جزءًا من منصتنا
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              آنشاء حساب
+            </button>
+          </div>
+          <img src="img/amara.png" class="image" alt="" style="visibility: hidden;">
+
+
+        </div>
+        <div class="panel right-panel">
+          <div dir="rtl" class="content">
+            <img src="img/amara.png"   class="image" alt=""  style="position: relative;top: -100px;"/>
+            <h3>بالفعل معانا  ؟</h3>
+            <p>
+              مرحبًا مجددًا! هل جئت لتحقيق أفكارك أم لتستكشف المزيد من الإبداع؟ سجّل دخولك الآن وانضم إلى مجتمع الابتكار والتميز.
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              تسجيل الدخول
+            </button>
+          </div>
+          <img src="img/amara.png" class="image" alt="" style="visibility: hidden;">
+        </div>
+      </div>
+    </div>
+
+    <script src="r.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        // Get the sign up form and success message elements
+        var signUpForm = document.querySelector(".sign-up-form");
+        var successMessage = document.getElementById("success-message");
+
+        // Add event listener to the sign up form
+        signUpForm.addEventListener("submit", function(event) {
+          event.preventDefault(); // Prevent form submission
+          // Show the success message
+          successMessage.style.display = "block";
+          // Hide the success message after animation ends
+          setTimeout(function() {
+            successMessage.style.display = "none";
+          }, 6000); // Duration of the animation (4s) + extra time
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        // Get the login button element
+        var loginButton = document.getElementById("login-btn");
+    
+        // Add event listener to the login button
+        loginButton.addEventListener("click", function(event) {
+          event.preventDefault(); // Prevent default form submission behavior
+          // Redirect to the form.html page
+          window.location.href = "form.html";
+        });
+      });
+    </script>
+
+<script>
+    document.getElementById("sign-in-btn").addEventListener("click", function() {
+        window.location.href = "index.html";
+    });
+</script>
+    
+  </body>
+</html>

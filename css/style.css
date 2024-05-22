@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+
+main {
+  background-color: #80c5a5;
+
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 300;
+}
+
+tr, td, tbody, tfoot {
+  display: block;
+}
+
+thead {
+  display: none;
+}
+
+tr {
+  padding-bottom: 10px;
+}
+
+td {
+  padding: 10px 10px 0;
+  text-align: center;
+}
+
+td:before {
+  content: attr(data-title);
+  color: #7a91aa;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  padding-right: 10px;
+  display: block;
+}
+
+table {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+}
+
+th {
+  text-align: left;
+  font-weight: 700;
+}
+
+thead th {
+  background-color: #1e532a;
+  color: #fff;
+  border: 1px solid #202932;
+  text-align: center;
+}
+
+tbody td {
+  text-align: center;
+}
+
+tfoot th {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  color: #b8c4d2;
+}
+
+.button {
+  line-height: 1;
+  display: inline-block;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 8px;
+  background-color: #4b908f;
+}
+
+@media (min-width: 460px) {
+  td {
+    text-align: left;
+  }
+  td:before {
+    display: inline-block;
+    text-align: right;
+    width: 140px;
+  }
+  .select {
+    padding-left: 160px;
+  }
+}
+
+@media (min-width: 720px) {
+  table {
+    display: table;
+  }
+  tr {
+    display: table-row;
+  }
+  td, th {
+    display: table-cell;
+  }
+  tbody {
+    display: table-row-group;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tfoot {
+    display: table-footer-group;
+  }
+  td {
+    border: 1px solid #28333f;
+  }
+  td:before {
+    display: none;
+  }
+  td, th {
+    padding: 10px;
+  }
+  tr:nth-child(2n+2) td {
+    background-color: #242e39;
+  }
+  tfoot th {
+    display: table-cell;
+  }
+  .select {
+    padding: 10px;
+  }
+}

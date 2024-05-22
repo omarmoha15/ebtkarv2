@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    
+    
+    <title>ابتكار - مرحبا</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" dir="rtl" class="sign-in-form">
+            <h2 class="title">تسجيل الدخول </h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="رقم الهوية" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="كلمة المرور" />
+            </div>
+            <input type="submit" value="دخول" class="btn solid" id="login-btn" />
+
+            
+            
+          </form>
+          
+          
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <img src="img/amara.png"   class="image" alt=""  style="position: relative;top: -100px;"/>
+            <h3>جديد هنا ؟</h3>
+            <p>
+              هل لديك فكرة مبتكرة ترغب في تحقيقها؟ انضم إلينا اليوم وقدّم فكرتك الرائعة لتلهم العالم. سجل الآن وكن جزءًا من منصتنا
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              آنشاء حساب
+            </button>
+          </div>
+          <img src="img/amara.png" class="image" alt="" style="visibility: hidden;">
+
+
+        </div>
+        
+       
+    </div>
+
+    <script src="app.js"></script>
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        // Get the login button element
+        var loginButton = document.getElementById("login-btn");
+    
+        // Add event listener to the login button
+        loginButton.addEventListener("click", function(event) {
+          event.preventDefault(); // Prevent default form submission behavior
+          // Redirect to the form.html page
+          window.location.href = "form.html";
+        });
+      });
+    </script>
+    <script>
+      document.getElementById("sign-up-btn").addEventListener("click", function() {
+          window.location.href = "register.html";
+      });
+  </script>
+    
+  </body>
+</html>
